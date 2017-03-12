@@ -2,8 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.minhnd.com/vo-minh/</loc>
+    <loc>http://blog.minhnd.com/go-hugo/</loc>
     <lastmod>2017-03-12T00:54:50+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.minhnd.com/tags/go/</loc>
+    <lastmod>2017-03-12T00:54:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.minhnd.com/tags/hugo/</loc>
+    <lastmod>2017-03-12T00:54:50+07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.minhnd.com/tags/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

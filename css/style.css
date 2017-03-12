@@ -190,7 +190,7 @@ li	{ list-style-type:circle; list-style-position:inside; }
 /* Line Height */
 #post-body, p { 
 	line-height:1.7; 
-	color:#333;
+	color:#000000;
 }
 
 b, strong { font-weight: 500;
@@ -386,8 +386,8 @@ Post List
 
 #post-list li,#archive-list li {
 	border-top: 1px solid #eee;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	list-style-type: none;
 	margin-bottom: 0;
 }

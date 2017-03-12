@@ -1,0 +1,225 @@
+    <!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Nguyễn Đăng Minh">
+		
+		<meta name="generator" content="Hugo 0.19" />
+		<title>Go Hugo &middot; Vô Minh</title>
+		<link rel="shortcut icon" href="http://blog.minhnd.com/images/favicon.ico">
+		<link rel="stylesheet" href="http://blog.minhnd.com/css/style.css">
+		<link rel="stylesheet" href="http://blog.minhnd.com/css/highlight.css">
+		
+
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+		
+
+		
+
+		<meta property="og:title" content="Go Hugo" />
+<meta property="og:description" content="Hôm nay tôi quyết định chuyển blog từ Blogspot/Blogger sang Hugo.
+Google rất giỏi về công nghệ, nhưng khoản mạng xã hội lại rất tệ. Hàng loạt sản phẩm của Google dù chất lượng rất tốt nhưng không thể duy trì được mà phải đóng cửa. Blogspot là sản phẩm Google mua lại, nhưng bị đối xử như thể con rơi. Trong khi các blogging platform khác nổi lên đình đám (Wordpress, Tumblr, Medium, Ghost,&hellip;) thì Blogspot cứ lẹt đà lẹt đẹt." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.minhnd.com/go-hugo/" />
+
+
+
+<meta property="article:published_time" content="2017-03-12T00:54:50&#43;07:00"/>
+<meta property="article:modified_time" content="2017-03-12T00:54:50&#43;07:00"/>
+
+
+
+
+
+
+
+
+
+
+
+	    
+	    
+<meta itemprop="name" content="Go Hugo">
+<meta itemprop="description" content="Hôm nay tôi quyết định chuyển blog từ Blogspot/Blogger sang Hugo.
+Google rất giỏi về công nghệ, nhưng khoản mạng xã hội lại rất tệ. Hàng loạt sản phẩm của Google dù chất lượng rất tốt nhưng không thể duy trì được mà phải đóng cửa. Blogspot là sản phẩm Google mua lại, nhưng bị đối xử như thể con rơi. Trong khi các blogging platform khác nổi lên đình đám (Wordpress, Tumblr, Medium, Ghost,&hellip;) thì Blogspot cứ lẹt đà lẹt đẹt.">
+
+
+<meta itemprop="dateModified" content="2017-03-12T00:54:50&#43;07:00" />
+<meta itemprop="wordCount" content="316">
+
+
+
+<meta itemprop="keywords" content="go,hugo," />
+
+	    
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:text:title" content="Go Hugo"/>
+<meta name="twitter:title" content="Go Hugo"/>
+<meta name="twitter:description" content="Hôm nay tôi quyết định chuyển blog từ Blogspot/Blogger sang Hugo.
+Google rất giỏi về công nghệ, nhưng khoản mạng xã hội lại rất tệ. Hàng loạt sản phẩm của Google dù chất lượng rất tốt nhưng không thể duy trì được mà phải đóng cửa. Blogspot là sản phẩm Google mua lại, nhưng bị đối xử như thể con rơi. Trong khi các blogging platform khác nổi lên đình đám (Wordpress, Tumblr, Medium, Ghost,&hellip;) thì Blogspot cứ lẹt đà lẹt đẹt."/>
+<meta name="twitter:site" content="@https://twitter.com/minhnd"/>
+
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+	   <a class="symbol" href="http://blog.minhnd.com/">
+	       <i class="fa fa-home"></i>
+	   </a>
+	
+</nav>
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>Go Hugo</h1>
+                    <h2 class="headline">
+                    March 12, 2017 
+                    <br>
+                    
+                    
+                        
+                            <a href="http://blog.minhnd.com/tags/go">go</a>
+                        
+                            <a href="http://blog.minhnd.com/tags/hugo">hugo</a>
+                        
+                    
+                    
+                    </h2>
+                </header>
+                <section id="post-body">
+                    <p>Hôm nay tôi quyết định chuyển blog từ Blogspot/Blogger sang <a href="http://gohugo.io">Hugo</a>.</p>
+
+<p>Google rất giỏi về công nghệ, nhưng khoản mạng xã hội lại rất tệ.
+Hàng loạt sản phẩm của Google dù chất lượng rất tốt nhưng không thể duy trì được mà
+phải đóng cửa. Blogspot là sản phẩm Google mua lại, nhưng bị đối xử như thể
+con rơi. Trong khi các blogging platform khác nổi lên đình đám (Wordpress, Tumblr, Medium,
+Ghost,&hellip;) thì Blogspot cứ lẹt đà lẹt đẹt. Giao diện không thay đổi bao nhiêu, theme nghèo
+nàn lèo tèo mấy cái dùng hết năm này qua năm khác, muốn chỉnh sửa theo ý mình cũng chẳng dễ
+chút nào. Chẳng cả hỗ trợ nhúng code vào bài viết nữa, đây là tính năng lập trình viên
+như tôi rất cần.</p>
+
+<p>Cho nên, tôi quyết định chuyển sang dùng blogging platform khác, cụ thể là Hugo,
+vì mấy lí do sau:</p>
+
+<ul>
+<li>Hugo là dạng static website engine. Bạn viết bài ra file text, Hugo sẽ chuyển nó thành
+trang HTML tĩnh. Web tĩnh thì sẽ không cần database engine, không (rất ít) lo về bảo mật.</li>
+<li>Hugo viết bằng Go - là ngôn ngữ lập trình yêu thích của tôi. Muốn chọc chạch chỉnh sửa gì
+cũng dễ.</li>
+<li>Viết bài bằng cú pháp Markdown gọn gàng, rõ ràng, nhất là với lập trình viên. Có sẵn nhiều
+phần mềm viết Markdown rất đẹp, ví dụ <a href="https://typora.io/">Typora</a>, hoặc dùng
+Sublime Text cũng được.</li>
+</ul>
+
+<p>Hiện tại tôi dùng <a href="https://www.sublimetext.com/">Sublime Text</a> để viết bài, phần mềm này phải
+trả tiền, nhưng là cán bộ hoạt động ngầm nên tôi được <a href="https://wikileaks.org/ciav7p1/cms/page_9535650.html">CIA mua cho.</a>
+Bài viết thì chứa trên <a href="https://pages.github.com/">Github Pages</a> cho đỡ tốn tiền. Giao diện
+thì tôi lấy bản <a href="http://themes.gohugo.io/cactus/">Hugo Cactus</a> về sửa đi một chút và đặt tên
+là <a href="https://github.com/nguyendangminh/hugo-vominh">Vô minh</a>.</p>
+
+<pre><code class="language-go">package main
+
+import (
+    &quot;fmt&quot;
+)
+
+func main() {
+    fmt.Println(&quot;Hello world!&quot;)
+}
+</code></pre>
+
+<p><img src="/images/vominh.jpg" alt="Vô minh" /></p>
+
+                </section>
+            </article>
+            <footer id="post-meta" class="clearfix">
+                
+                        <img class="avatar" src="http://blog.minhnd.com/images/avatar.png">
+                        <div>
+                            <span class="dark">Nguyễn Đăng Minh</span>
+                            <span>I&#39;m an enthusiastic gopher.</span>
+                        </div>
+                    
+                <section id="sharing">
+                    <a class="twitter" href="https://twitter.com/intent/tweet?text=http%3a%2f%2fblog.minhnd.com%2fgo-hugo%2f - Go%20Hugo "><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+
+                </section>
+            </footer>
+
+            
+
+            <ul id="post-list" class="archive readmore">
+    <h3>Read more</h3>
+
+    
+    
+    
+        
+        <li>
+            <a href="http://blog.minhnd.com/go-hugo/">Go Hugo<aside class="dates">Mar 12</aside></a>
+        </li>
+        
+   
+</ul>
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://github.com/nguyendangminh">
+        <i class="fa fa-github"></i>
+    </a>
+    
+    <a class="symbol" href="/index.xml">
+        <i class="fa fa-rss"></i>
+    </a>
+    
+    <a class="symbol" href="https://twitter.com/minhnd">
+        <i class="fa fa-twitter"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+        © Copyright 2017 Nguyễn Đăng Minh
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://blog.minhnd.com/js/main.js"></script>
+<script src="http://blog.minhnd.com/js/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+    </body>
+</html>
