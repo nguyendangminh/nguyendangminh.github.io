@@ -14,35 +14,37 @@
       <pubDate>Sun, 12 Mar 2017 00:54:50 +0700</pubDate>
       
       <guid>http://blog.minhnd.com/go-hugo/</guid>
-      <description>&lt;p&gt;Hôm nay tôi quyết định chuyển blog từ Blogspot/Blogger sang &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Tôi chuyển blog từ Blogspot (Blogger) sang &lt;a href=&#34;http://gohugo.io&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Google rất giỏi về công nghệ, nhưng khoản mạng xã hội lại rất tệ.
-Hàng loạt sản phẩm của Google dù chất lượng rất tốt nhưng không thể duy trì được mà
-phải đóng cửa. Blogspot là sản phẩm Google mua lại, nhưng bị đối xử như thể
+&lt;p&gt;Google giỏi công nghệ, nhưng làm các sản phẩm có tính cộng đồng như mạng xã hội, blog,
+messenger,&amp;hellip; lại rất tệ. Nhiều sản phẩm của Google chất lượng tốt, được chăm chút kĩ
+càng nhưng không lôi cuốn người dùng và phải đóng cửa, ví dụ Google+, Gtalk, Google Wave, Google Space,&amp;hellip;
+Blogspot hơi khác một chút, đây là sản phẩm Google mua lại, nhưng bị đối xử như thể
 con rơi. Trong khi các blogging platform khác nổi lên đình đám (Wordpress, Tumblr, Medium,
-Ghost,&amp;hellip;) thì Blogspot cứ lẹt đà lẹt đẹt. Giao diện không thay đổi bao nhiêu, theme nghèo
-nàn lèo tèo mấy cái dùng hết năm này qua năm khác, muốn chỉnh sửa theo ý mình cũng chẳng dễ
-chút nào. Chẳng cả hỗ trợ nhúng code vào bài viết nữa, đây là tính năng lập trình viên
-như tôi rất cần.&lt;/p&gt;
+Ghost,&amp;hellip;) thì Blogspot cứ lẹt đà lẹt đẹt. Qua nhiều năm tính năng cũng không thay đổi
+bao nhiêu, theme nghèo nàn lèo tèo vài cái xấu ơi là xấu, muốn chỉnh sửa theo ý mình cũng
+chẳng dễ chút nào. Lại không hỗ trợ nhúng code vào bài viết nữa, đây là tính năng mà
+lập trình viên như tôi rất cần.&lt;/p&gt;
 
-&lt;p&gt;Cho nên, tôi quyết định chuyển sang dùng blogging platform khác, cụ thể là Hugo,
-vì mấy lí do sau:&lt;/p&gt;
+&lt;p&gt;Bởi vậy, tôi quyết định chuyển sang dùng blogging platform khác, cụ thể là Hugo:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Hugo là dạng static website engine. Bạn viết bài ra file text, Hugo sẽ chuyển nó thành
-trang HTML tĩnh. Web tĩnh thì sẽ không cần database engine, không (rất ít) lo về bảo mật.&lt;/li&gt;
+&lt;li&gt;Hugo là static website engine. Bạn viết bài ra file text, Hugo sẽ chuyển nó thành
+trang HTML tĩnh để đẩy lên máy chủ. Web tĩnh thì sẽ không cần database engine, không
+(hoặc rất ít) phải lo về bảo mật.&lt;/li&gt;
 &lt;li&gt;Hugo viết bằng Go - là ngôn ngữ lập trình yêu thích của tôi. Muốn chọc chạch chỉnh sửa gì
 cũng dễ.&lt;/li&gt;
-&lt;li&gt;Viết bài bằng cú pháp Markdown gọn gàng, rõ ràng, nhất là với lập trình viên. Có sẵn nhiều
-phần mềm viết Markdown rất đẹp, ví dụ &lt;a href=&#34;https://typora.io/&#34;&gt;Typora&lt;/a&gt;, hoặc dùng
+&lt;li&gt;Viết bài bằng cú pháp Markdown gọn gàng, rõ ràng, nhất là với lập trình viên. Đã có sẵn
+nhiều phần mềm viết Markdown rất đẹp như &lt;a href=&#34;https://typora.io/&#34;&gt;Typora&lt;/a&gt;, hoặc dùng luôn
 Sublime Text cũng được.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Hiện tại tôi dùng &lt;a href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; để viết bài, phần mềm này phải
-trả tiền, nhưng là cán bộ hoạt động ngầm nên tôi được &lt;a href=&#34;https://wikileaks.org/ciav7p1/cms/page_9535650.html&#34;&gt;CIA mua cho.&lt;/a&gt;
-Bài viết thì chứa trên &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt; cho đỡ tốn tiền. Giao diện
-thì tôi lấy bản &lt;a href=&#34;http://themes.gohugo.io/cactus/&#34;&gt;Hugo Cactus&lt;/a&gt; về sửa đi một chút và đặt tên
-là &lt;a href=&#34;https://github.com/nguyendangminh/hugo-vominh&#34;&gt;Vô minh&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hiện tại tôi dùng &lt;a href=&#34;https://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; để viết vì đằng nào hàng ngày
+viết code cũng đang xài cái này. Dùng Sublime Text phải trả tiền (cho đỡ bị phần mềm réo mỗi ngày),
+nhưng là cán bộ hoạt động ngầm nên tôi được các sếp ở &lt;a href=&#34;https://wikileaks.org/ciav7p1/cms/page_9535650.html&#34;&gt;CIA mua license&lt;/a&gt;
+cho. Tôi lưu bài viết trên &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt; để đỡ tốn tiền server.
+Giao diện blog thì tôi lấy bản &lt;a href=&#34;http://themes.gohugo.io/cactus/&#34;&gt;Hugo Cactus&lt;/a&gt; về sửa đi
+một chút, đặt tên là &lt;a href=&#34;https://github.com/nguyendangminh/hugo-vominh&#34;&gt;Vô minh&lt;/a&gt;.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
 
