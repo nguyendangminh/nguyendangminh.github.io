@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vô Minh</title>
+    <link>http://blog.minhnd.com/index.xml</link>
+    <description>Recent content on Vô Minh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Mar 2017 00:54:50 +0700</lastBuildDate>
+    <atom:link href="http://blog.minhnd.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Vô minh là gì?</title>
+      <link>http://blog.minhnd.com/vo-minh/</link>
+      <pubDate>Sun, 12 Mar 2017 00:54:50 +0700</pubDate>
+      
+      <guid>http://blog.minhnd.com/vo-minh/</guid>
+      <description>&lt;p&gt;Thiền sư: Vô minh nghĩa là gì?&lt;/p&gt;
+
+&lt;p&gt;Đệ tử: Con chịu.&lt;/p&gt;
+
+&lt;p&gt;Thiền sư: Đấy là vô minh.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
+
+import (
+    &amp;quot;fmt&amp;quot;
+)
+
+func main() {
+    fmt.Println(&amp;quot;Hello world!&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
